@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bike"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/blancobr"
+        android:layout_gravity="center"
+        android:layout_weight=".25"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/Ninja"
+            android:textColor="@color/azul02"
+            android:textSize="@dimen/xx_xlarge"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".60"
+        android:gravity="center"
+        android:background="@color/blancobr"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingRight="@dimen/chavita">
+
+            <EditText
+                android:id="@+id/edt_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/correo"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColorHint="@color/blanco"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/medium" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingRight="@dimen/chavita">
+
+            <EditText
+                android:id="@+id/edt_contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/contraseña"
+                android:inputType="textPassword"
+                android:textColorHint="@color/blanco"
+                android:padding="10dp"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/medium" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/forgot"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/medium"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/blancobr"
+        android:layout_weight=".15"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_acount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/botones"
+            android:text="@string/count"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/medium"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/btn_iniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/botones"
+            android:text="@string/iniciar"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/medium"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/btn_acount"
+            android:layout_toStartOf="@+id/btn_acount" />
+    </RelativeLayout>
+
+
+</LinearLayout>

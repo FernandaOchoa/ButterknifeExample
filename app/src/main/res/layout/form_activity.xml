@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul07"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.fernandaochoa.mockupsmaterial.FormActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20"
+
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/first"
+            android:textColor="@color/blanco" />
+
+        <TextView
+            android:id="@+id/tv_apellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_nombre"
+            android:layout_alignBottom="@+id/tv_nombre"
+            android:layout_alignStart="@+id/edt_last"
+            android:text="@string/last"
+            android:textColor="@color/blanco" />
+
+        <EditText
+            android:id="@+id/edt_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="93dp"
+            android:hint="@string/last"
+            android:textColor="@color/blanco"
+            android:textColorHint="@color/blanco" />
+
+        <EditText
+            android:id="@+id/edt_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/edt_last"
+            android:hint="@string/first"
+            android:textColor="@color/blanco"
+            android:textColorHint="@color/blanco" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".6"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingRight="@dimen/chavita">
+
+            <EditText
+                android:id="@+id/edt_pass1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/contraseña"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/blanco" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingRight="@dimen/chavita">
+
+            <EditText
+                android:id="@+id/edt_confpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/repite"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/blanco"
+                android:textColorHint="@color/blanco" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingRight="@dimen/chavita">
+
+            <EditText
+                android:id="@+id/edt_telefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/num"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/blanco"
+                android:textColorHint="@color/blanco" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingRight="@dimen/chavita">
+
+            <EditText
+                android:id="@id/edt_correo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/correo"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/blanco"
+                android:textColorHint="@color/blanco" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1"
+        android:background="@color/botones"
+        android:text="@string/registrar"
+        android:textColor="@color/blanco"
+        android:textSize="@dimen/large"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
